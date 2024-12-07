@@ -107,6 +107,8 @@ public class NameService {
                         name.setContent(content);
                         name.setSource(source);
                         name.setLastName(condition.getLastName());
+                        name.setName(condition.getLastName() + firstName);
+                        name.setTraditionalName(JianFan.j2f(name.getName()));
                         name.setStrokeList(strokes);
                         resultList.add(name);
                         nameSet.add(firstName);
@@ -172,6 +174,10 @@ public class NameService {
                 int idx1 = source.getContentList().indexOf(ming1);
                 int idx2 = source.getContentList().indexOf(ming2);
                 if (idx1 > -1 && idx2 > -1 && idx1 < idx2) {
+                    String content = source.getContent();
+                    content = content.replace(source.getContentList().get(idx1), "「" + source.getContentList().get(idx1) + "」");
+                    content = content.replace(source.getContentList().get(idx2), "「" + source.getContentList().get(idx2) + "」");
+                    source.setContent(content);
                     resSourceList.add(source);
                     if (resSourceList.size() >= 5) {
                         isBreak = true;

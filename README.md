@@ -3,7 +3,7 @@
 
 首先，感谢 @NanBox 老哥的项目 [PiPiName](https://github.com/NanBox/PiPiName) ，该项目就是它的 SpringBoot 版本
 
-相关介绍可以看老哥的[这篇文章](https://juejin.cn/post/6868186071260856334)
+相关介绍可以看老哥的 [这篇文章](https://juejin.cn/post/6868186071260856334)
 
 # 来源
 21年初，女儿出生前夕给女儿取名的时候，在 github 上搜到了 [PiPiName](https://github.com/NanBox/PiPiName) 这个项目

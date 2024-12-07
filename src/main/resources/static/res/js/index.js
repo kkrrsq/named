@@ -68,9 +68,9 @@ layui.use(['form','stools','table','tag'],function(){
                             elem: '#table'
                             ,toolbar: true
                             ,cols: [[
-                                {field:'lastName', title: '姓名', width:100
+                                {field:'name', title: '姓名', width:200
                                     ,templet: function(d){
-                                        return d.lastName + d.firstName
+                                        return d.name
                                     }
                                 }
                                 ,{field:'stroke', title: '笔画', width:120
