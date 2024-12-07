@@ -68,7 +68,7 @@ layui.use(['form','stools','table','tag'],function(){
                             elem: '#table'
                             ,toolbar: true
                             ,cols: [[
-                                {field:'name', title: '姓名', width:200
+                                {field:'name', title: '姓名', width:100
                                     ,templet: function(d){
                                         return d.name
                                     }
